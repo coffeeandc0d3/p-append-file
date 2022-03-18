@@ -24,7 +24,10 @@ Best used with an alias shortcut or even better a keyboard shortcut like F1
 * [Start Program]
 
   cd /home/$USER
+  
   ./append.sh
+      -or- (some keyboard shortcuts prefer): 
+  bash /home/$USER/append.sh 
 
 *Note* 
 
