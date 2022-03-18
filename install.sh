@@ -4,6 +4,8 @@
 userPath=`echo /home/$USER`
 cp append.sh $userPath
 
+cd $userPath
+
 # Let user run the driver script
 sudo chmod u+x append.sh
 
