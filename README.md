@@ -38,7 +38,7 @@ This directory will need to remain unmoved so the append.sh script invokes corre
 
 [Tips]
 
-If you have trouble getting $home pathnames found, you'll need to type: */home/your-name/<filename>
+If you have trouble getting $home pathnames found, you'll need to type: */home/your-name/filename*
   
 
 [Todo]
