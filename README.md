@@ -1,5 +1,5 @@
 # p-append-file
-Appends text to a specified file at the beginning of the file (not the end). 
+Appends text to a specified file at beginning of that file (not the end). 
 
 Best used with an alias shortcut or even better a keyboard shortcut like F1
 
