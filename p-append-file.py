@@ -10,7 +10,7 @@ def insert(originalfile,string):
 		os.rename('buffer.txt',originalfile)
 	
 		print("Done!\nFile: " + originalfile + " appended. ")
-		time.sleep(1.3)
+		time.sleep(1.0)
 
 # User input
 def main():
