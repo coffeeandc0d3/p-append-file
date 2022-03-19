@@ -44,7 +44,7 @@ If you have trouble getting $home pathnames found, you'll need to type: */home/y
 [Todo]
 
  * If filepath not found, notify and re-prompt user (currently to know if failed, you won't see the 
- 'Done!' text, but it's easy to miss that as well. 
+ 'Done!' text, but it's easy to miss it. 
   
- * shell-like path-completion to make easier 
+ * Shell-like path-completion to make easier 
   
