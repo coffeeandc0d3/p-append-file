@@ -36,6 +36,14 @@ Best used with an alias shortcut or even better a keyboard shortcut like F1
 Program's main driver code is in ~/build/p-append-file/ directory. 
 This directory will need to remain unmoved so the append.sh script invokes correct path of python script. *But* you can easily change this by editing the path it targets for the *p-append-file.py*. This is done inside the *append.sh* script :) 
 
-[Tips
+[Tips]
 
 If you have trouble getting pathnames found, you'll likely need to type: *~/* or */home/$USER/* <filename>
+
+[Todo]
+
+ * If filepath not found, notify and re-prompt user (currently to know if failed, you won't see the 
+ 'Done!' text, but it's easy to miss that as well. 
+  
+ * shell-like path-completion to make easier 
+  
