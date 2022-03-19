@@ -1,7 +1,7 @@
 import os
 import time 
 
-# Writes new text into buffer & old text, renames to original filename
+# Writes new & old text into buffer, renames buffer to original filename
 def insert(originalfile,string):
 	with open(originalfile,'r') as f:
 		with open('buffer.txt','w') as f2:
