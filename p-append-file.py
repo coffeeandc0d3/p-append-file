@@ -5,7 +5,7 @@ import time
 def insert(originalfile,string):
 	with open(originalfile,'r') as f:
 		with open('buffer.txt','w') as f2:
-			f2.write(string + "\n")
+			f2.write(string + "\n\n")
 			f2.write(f.read())
 		os.rename('buffer.txt',originalfile)
 	
