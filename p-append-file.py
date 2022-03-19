@@ -15,7 +15,7 @@ def insert(originalfile,string):
 # User input
 def main():
 	pastedText = input("Paste text to be appended to file: \n")
-	fileToAppend = input("File to be appended: (use ~/ or /home/<username>/ ) \n")
+	fileToAppend = input("File to be appended: (for $home type: /home/<username>/ ) \n")
 
 	insert(fileToAppend, pastedText)
 
