@@ -22,15 +22,15 @@ def main():
 	x =  input() 
 	rawInput = []
 
-#   Allows pasting multi-line text	
-	while x != '':  
-		rawInput.append(x) 
-		x = input()
-	print(rawInput)
-	
 	count = 0
 	while True:
 		
+	#   Allows pasting multi-line text	
+		while x != '':  
+			rawInput.append(x) 
+			x = input()
+		print(rawInput)
+	
 		count += 1
 		print (count)
 		
@@ -48,4 +48,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
