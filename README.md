@@ -38,13 +38,10 @@ This directory will need to remain unmoved so the append.sh script invokes corre
 
 [Tips]
 
-If you have trouble getting $home pathnames found, you'll need to type: */home/your-name/filename*
+You shouldn't need to enter your /home/$USER/ as the pathname, it starts in the home directory by default. 
   
 
 [Todo]
-
- * If filepath not found, notify and re-prompt user (currently to know if failed, you won't see the 
- 'Done!' text, but it's easy to miss it. 
-  
+ 
  * Shell-like path-completion to make easier 
   
