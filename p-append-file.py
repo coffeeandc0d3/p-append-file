@@ -14,7 +14,7 @@ def insert(originalfile,strings):
 		print("Done!\nFile: " + originalfile + " appended. ")
 		time.sleep(1.0)
 
-# User input
+# Input followed by file being appended
 def main():
 
 	print('Enter or paste text to append: ')
@@ -29,22 +29,27 @@ def main():
 		while x != '':  
 			rawInput.append(x) 
 			x = input()
+		print("\n")
 		print(rawInput)
 	
 		count += 1
 		print (count)
-		
+
+# 		Prompt after path error: 
 		if (count >= 2):
 			print("Sorry couldn't find that filepath. ")
-		
-		fileToAppend = input("File to be appended: (for $home type: /home/<username>/<file> ) \n")
-		
-		if(os.path.isfile(fileToAppend) == True):
+
+# 		Auto starts in user $home
+		PATH = os.getenv("HOME") + "/"
+		PATH = PATH + input("File to append to: ")
+
+		if(os.path.isfile(PATH) == True):
 			count += 1
-			print(count)
 			break
 
-	insert(fileToAppend, rawInput)
+		print(PATH)
+
+	insert(PATH, rawInput)
 
 if __name__ == "__main__":
 	main()
