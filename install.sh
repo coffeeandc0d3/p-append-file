@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# get python import if not installed:
+pip3 install prompt_toolkit
+
 # copy the append.sh to user $HOME
 userPath=`echo /home/$USER`
 cp append.sh $userPath
