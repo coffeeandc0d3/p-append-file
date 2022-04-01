@@ -17,7 +17,7 @@ def insert(originalfile,strings):
 # Input followed by file being appended
 def main():
 
-	print('Enter or paste text to append: ')
+	print('Enter or paste text to append: (Press enter twice when done) ')
 	
 	x =  input() 
 	rawInput = []
