@@ -41,7 +41,7 @@ def main():
 			count += 1
 			break
 
-		print(PATH)
+	print(PATH)
 	insert(PATH, rawInput)
 
 if __name__ == "__main__":
