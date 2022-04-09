@@ -1,4 +1,5 @@
 import os
+import sys
 import time 
 import prompt_toolkit
 
@@ -10,28 +11,20 @@ def insert(originalfile,strings):
 				f2.write(line + "\n\n")
 				f2.write(f.read())
 		os.rename('buffer.txt',originalfile)
-	
+		
 		print("Done!\nFile: " + originalfile + " appended. ")
 		time.sleep(1.0)
 
-# Input followed by file being appended
+# User input
 def main():
-
-	print('Enter or paste text to append: (Press enter twice when done) ')
-	
-	x =  input() 
-	rawInput = []
+	with open(sys.argv[1]) as f:
+		rawInput = f.readlines()
+	print (rawInput)
 
 	count = 0
 	while True:
 		
-	#   Allows pasting multi-line text	
-		while x != '':  
-			rawInput.append(x) 
-			x = input()
-		print("\n")
-		print(rawInput)
-	
+#		Allows pasting multi-line text	
 		count += 1
 		print (count)
 
@@ -43,12 +36,12 @@ def main():
 		PATH = os.getenv("HOME") + "/"
 		PATH = PATH + input("File to append to: ")
 
+# 		Check path exists
 		if(os.path.isfile(PATH) == True):
 			count += 1
 			break
 
 		print(PATH)
-
 	insert(PATH, rawInput)
 
 if __name__ == "__main__":
